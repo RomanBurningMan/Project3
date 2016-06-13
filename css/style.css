@@ -1,0 +1,812 @@
+@font-face{
+	font-family: 'Lora';
+	src: url('../font/Lora-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'Lora';
+	src: url('../font/Lora-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'Lora';
+	src: url('../font/Lora-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Oswald';
+	src: url('../font/Oswald-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'Oswald';
+	src: url('../font/Oswald-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'Oswald-Light';
+	src: url('../font/Oswald-Light.ttf');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font: 100%/1.5em 'Lora', Arial, sans-serif;
+	background-color: #f2efed;
+	color: #241c18;
+	overflow: auto;
+	min-width: 320px;
+}
+
+a{
+	text-decoration: none;
+	color: #241c18;
+}
+
+li{
+	list-style: none;
+}
+
+.row {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.row:before, .row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.cols{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 1em;
+}
+
+[class^="col-"]{
+	max-width: 64em;
+}
+
+.col-16{
+	width: 100%;
+}
+
+.col-15{
+	width: 93.7%;
+}
+
+.col-14{
+	width: 87.5%;
+}
+
+.col-13{
+	width: 81.2%;
+}
+
+.col-12{
+	width: 75%;
+}
+
+.col-11{
+	width: 68.7%;
+}
+
+.col-10{
+	width: 62.5%;
+}
+
+.col-9{
+	width: 56.2%;
+}
+
+.col-8{
+	width: 50%;
+}
+
+.col-7{
+	width: 43.7%;
+}
+
+.col-6{
+	width: 37.5%;
+}
+
+.col-5{
+	width: 31.2%;
+}
+
+.col-4{
+	width: 25%;
+}
+
+.col-3{
+	width: 18.7%;
+}
+
+.col-2{
+	width: 12.5%;
+}
+
+.col-1{
+	width: 6.2%;
+}
+
+.main-header{
+	min-height: 60em;
+	padding-top: 4.8em;
+	background: #897268 url('../img/guitar.gif') 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.main-header nav li{
+	font-size: 1.2em;
+	margin: 0 0.3em;
+	float: left;
+}
+
+.header_menu{
+	text-transform: uppercase;
+}
+
+.header_menu{
+	color: #826b60;
+}
+
+.header_wave{
+	display: none;
+	position: absolute;
+	width: 3.5em;
+	height: 1em;
+	background: url('../img/wave.png') 50% 0 no-repeat;
+}
+
+.header_menu:hover .header_wave{
+	display: block;
+}
+
+.main-header ul li{
+	font-size: 0.75em;
+	color: #826b60;
+	text-transform: uppercase;
+}
+
+.first-colm{
+	padding-top: 11em;	
+}
+
+.second-colm{
+	padding-top: 5em;
+} 
+
+.third-colm{
+	padding-top: 9em;
+}
+
+.fourth-colm{
+	padding-top: 10em;
+}
+
+.name-band{
+	font-family: 'Oswald';
+	font-weight: bold;
+	font-size: 6.25em;
+	text-transform: uppercase;
+	position: absolute;
+	text-align: center;
+	line-height: 1.1em;
+	width: 6em;
+	right: 0.1em;
+	top: 3.3em;
+}
+
+.first-name{
+	color: #e4dddb;
+	
+}
+
+.second-name{
+	color: #241c18;	
+}
+
+/*описание группы*/
+.about-band{
+	min-height: 60em;
+	padding-top: 12.5em;
+	background: #f2efed url("../img/Curt-Sheard.png") 20% 100% no-repeat;
+}
+
+.left-arrow a, .right-arrow a{
+	display: block;
+	width: 100%;
+	height: 30em;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.left-arrow a{
+	background-image: url("../img/back.png");
+}
+
+.right-arrow a{
+	background-image: url("../img/next.png");
+}
+
+.musician-photo{
+	height: 100%;
+}
+
+.musician-photo div{
+	float: right;
+	margin-top: 7em;
+	margin-right: 1.5em; 	
+	font-family: 'Oswald';
+	font-size: 4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.7em;
+	text-align: center;
+	width: 5em;
+}
+
+.first-name-actor{
+	color: #826b60;
+}
+
+.list-actor{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #e4dddb;
+	margin-top: 7em;
+	margin-bottom: 7em;
+	
+	transform: rotate(-90deg);
+}
+
+.list-actor a{
+	color: #e4dddb;
+}
+
+.list-actor ul li{
+	display: inline-block;
+}
+
+.list-actor_name{
+	text-align: right;
+	width: 10em;
+}
+
+.mus-instr{
+	text-align: left;
+	width: 5.4em;
+}
+
+.circle{
+	font-family: Webdings;
+	text-transform: none;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.list-actor_checked a{
+	color: #826b60;
+}
+
+.description-actor h2{
+	width: 6.5em;
+	font-size: 2.25em;
+	line-height: 1.25em;	
+	font-family: 'Oswald';
+	margin: 4.6em auto 1em auto;
+}
+
+.description-actor{
+	max-width: 80%;
+}
+
+/*третий блок*/
+
+.music{
+	font-family: 'Oswald';
+	min-height: 60em;
+	padding-top: 6.25em;
+	background-color: #f8f8f8;
+}
+
+.discography{
+	padding-left: 10%;
+}
+
+.discography > h2{
+	font-size: 2.25em;
+	line-height: 2.16em;
+}
+
+.disc-item li{
+	display: inline-block;
+	font-size: 1.87em;
+	line-height: 2.6em;
+
+}
+
+.column-1, .column-3{
+	font-family: 'Oswald-Light';
+}
+
+.disc-item .column-1{
+	width: 9.26em;
+	
+}
+
+.disc-item .circle{
+	font-size: 1.1em;
+	line-height: 4.2em;
+	vertical-align: top;
+	color: #e4dddb;
+}
+
+.column-3{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.disc-item li[class^="disc-btn-"]{
+	font-size: 1.125em;
+	width: 4.33em;
+	margin-left: 0.8em;
+	margin-right: 0.8em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.disc-btn-listen{
+	background-color: #e4dddb;
+}
+
+.disc-btn-listen a{
+	color: #826b60;
+}
+
+.disc-btn-buy{
+	background-color: #826b60;
+}
+
+.disc-btn-buy a{
+	color: #f8f8f8;
+}
+
+.player > h2{
+	font-size: 2.25em;
+	line-height: 2.16em;
+}
+
+.player > h3{
+	font-size: 1.87em;
+	line-height: 2.6em;
+	font-family: 'Oswald-Light';
+}
+
+.player > p{
+	font-family: 'Lora';
+	font-style: italic;
+	font-size: 1.125em;
+	color: #826b60;
+}
+
+.player-btn{
+	margin: 1.69em auto 0.5em auto;
+	width: 27.8em;
+}
+
+.player-btn a{
+	display: inline-block;
+	height: 2.94em;
+	width: 3.75em;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+}
+
+.last{
+	background-image: url("../img/rewind.png");
+}
+
+.stop-play{
+	background-image: url("../img/pause.png");
+}
+
+.next{
+	background-image: url("../img/forward.png");
+}
+
+.scale{
+	width: 100%;
+	overflow: hidden;
+}
+
+.mark{
+	position: relative;
+	cursor: pointer;
+	width: 2em;
+	height: 2em;
+	background-color: #826b60;
+	border-radius: 50%;
+	left: 50%;
+	z-index: 10;
+}
+
+.scale:before, .scale:after{
+	content: '';
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0.5em;
+}
+
+.scale:before{
+	top: 1.3em;
+	background-color: #e4dddb;
+}
+
+.scale:after{
+	background-color: #ab9c95;
+	top: -1.3em;
+	left: 50%;
+	z-index: 5;
+}
+
+.disc-track h2{
+	font-size: 1.875em;
+	line-height: 2.6em;
+	margin-top: 0.5em;
+}
+
+.disc-track li{
+	display: inline-block;
+	font-size: 1.125em;
+	font-family: 'Lora';
+	line-height: 2em;
+	color: #826b60;
+}
+
+.disc-track_name{
+	box-sizing: border-box;
+	padding-left: 1.72em;
+	width: 59%;
+	background: url(../img/arrow-track.png) 0 50% no-repeat;
+}
+
+.disc-track_name.checked-track{
+	background-image: url('../img/arrow-track-checked.png');
+	z-index: 10;
+}
+
+.disc-track_dots{
+	width: 29%;
+	border-bottom: 2px dotted #826b60;
+}
+
+.disc-track_time{
+	width: 10%;
+	text-align: right;
+}
+/*четвертый блок*/
+.tour-dates{
+	height: 60em;
+	background-color: #f1eeed;
+	text-align: center;
+}
+
+.tour-dates h2{
+	font-family: 'Oswald';
+	font-size: 2.25em;
+	line-height: 4.875em;
+}
+
+.dates{
+	position: relative;
+	transform: rotate(-90deg);
+	width: 20em;
+	border-right: 0.2em solid #e4dddb;;
+	top: -19em;
+	left: 40%;
+}
+
+.tour-dates section{
+	height: 20em;
+}
+
+ul[class^="item-dates-"] li{
+	display: inline-block;
+	max-width: 17.8em;
+	margin-top: 1.1em;
+	margin-bottom: 1.1em;
+	margin-right: -1.5em;
+}
+
+ul[class^="item-dates-"] li:not(.tour-dates_circle){
+	line-height: 1.1em;
+	text-align: right;
+	margin-right: 0.5em;
+}
+
+ul[class^="item-dates-"] li a{
+	display: inline-block;
+}
+
+.tour-dates_circle{
+	font-family: 'Webdings';
+	vertical-align: top;
+	line-height: 2em;
+
+}
+
+.hidden-item{
+	color: #e4dddb;
+}
+
+.active-item{
+	color: #241c18;
+}
+
+.next-item{
+	color: #826b60;
+}
+
+.tour-dates_left-arrow, .tour-dates_right-arrow{
+	display: inline-block;
+	width: 15em;
+	height: 2em;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	
+}
+
+.tour-dates_left-arrow{
+	background-image: url("../img/slider-top-arrow.png");
+}
+
+.tour-dates_right-arrow{
+	background-image: url("../img/slider-bottom-arrow.png");
+}
+
+.tour-dates .concert{
+	float: none;
+	height: 18em;
+	overflow-y: scroll;   
+	margin: auto;
+	margin-top: 25em;
+}
+
+div[class^="concert-ticket-"]{
+	height: 6em;
+	text-align: left;
+	background-image: url('../img/dot.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+div[class^="concert-ticket-"] div{
+	display: inline-block;
+}
+
+div[class^="concert-date-"]{
+	font-family: 'Oswald';
+	font-weight: bold;
+}
+
+.concert-day{
+	font-size: 3.125em;
+	line-height: 1.56em;
+}
+
+.concert-month-year{
+	margin-left: 0.3em;
+	margin-right: 1.5em;
+	padding-right: 1.2em;
+	border-right: 0.5em solid #e4dddb;
+}
+
+.concert-month-year span{
+	display: block;
+	font-size: 1.43em;
+}
+
+.concert-places{
+	font-family: 'Oswald-Light';
+	font-size: 1.875em;
+	line-height: 2.6em;
+	vertical-align: top;
+}
+
+.separator{
+	margin-right: 0.7em;
+	margin-left: 0.7em;
+}
+
+.btn_buy-ticket{
+	float: right;
+	color: #f8f8f8;
+	font-family: 'Oswald';
+	font-weight: normal;
+	font-size: 1.125em;
+	padding: 0.4em 1.3em;
+	margin-top: 1.3em;
+	margin-right: 2em;
+	background-color: #826b60;
+}
+
+/*футер*/
+
+.footer{
+	height: 60em;
+	padding-top: 9.375em;
+	background: url('../img/contact.jpg') 50% 100% no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.contact{
+	font-family: 'Oswald';
+	font-weight: bold;
+	color: #241c18;
+	margin: auto;
+	padding-bottom: 1.7em;
+	background: url('../img/dot-white.png') 0 100% repeat-x;
+}
+
+.contact h2{
+	text-align: center;
+	font-size: 3.33em; 
+	line-height: 1.3em;
+}
+
+.number{
+	color: #e4dddb;
+}
+
+.subscribe{
+	margin: auto;
+	padding-top: 2.625em;
+	padding-bottom: 2.625em;
+}
+
+.subscribe > div, .subscribe form, .subscribe > a{
+	float: left;
+}
+
+.subscribe_title{
+	font-family: 'Oswald';
+	font-weight: bold;
+	font-size: 2.25em;
+	line-height: 1em;
+	color: #e4dddb;
+	padding: 0.2em 0.9em;
+	background-color: #241c18;
+}
+
+.subscribe input{
+	border: 0.25em solid #241c18;
+	font-size: 1.3em;
+	font-family: 'Oswald';
+	line-height: 1em;
+	height: 1.95em;
+	margin-right: 0.5em;
+}
+
+.subscribe a{
+	width: 3.125em;
+	height: 3.125em;
+	margin-left: 0.5em;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+
+.facebook{
+	background-image: url("../img/facebook-logo.png");
+}
+
+.youtube{
+	background-image: url("../img/youtube-logo.png");
+}
+
+.footer-nav{
+	position: relative;
+	color: #e4dddb;
+	height: 2em;
+	bottom: -30em;
+}
+
+.footer-nav_item{
+	float: right;
+}
+
+.footer-nav_item li{
+	float: right;
+	margin-right: 0.4em;
+}
+
+.footer-nav_item li a{
+	color: #e4dddb;
+	font-weight: bold;
+}
+
+.footer_wave{
+	display: none;
+	position: absolute;
+	width: 3.5em;
+	height: 1em;
+	background: url('../img/wave_footer.png') 50% 0 no-repeat;
+}
+
+.header_menu:hover .footer_wave{
+	display: block;
+}
+
+.copyring{
+	float: left;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
